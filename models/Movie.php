@@ -1,6 +1,6 @@
 <?php
 
-// todo require actor class
+require_once __DIR__ . '/Actor.php';
 
 // I made title and release year public and initialized through the constructor, and actors and genres protected behind getters and setters just to play with different concepts, no real reasons :)
 
@@ -8,7 +8,7 @@ class Movie
 {
 
     public string $title;
-    public string $release_year;
+    public int $release_year;
 
     /**
      * @var Actor[]
@@ -20,7 +20,7 @@ class Movie
      */
     protected array $genres = [];
 
-    public function __construct(string $title, string $release_year)
+    public function __construct(string $title, int $release_year)
     {
         $this->$title = $title;
         $this->release_year = $release_year;
