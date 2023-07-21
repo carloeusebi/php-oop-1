@@ -7,3 +7,31 @@
 body{
     font-family: sans-serif;
 }
+
+header{
+    margin: 1rem 0 5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.movie-list-item{
+    margin-bottom: 2rem;
+}
+
+ul [class$='list']{
+    margin-left: 1rem;
+}
+
+ul div{
+    padding: .125rem 0;
+}

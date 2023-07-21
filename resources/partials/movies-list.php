@@ -22,7 +22,6 @@
                 <?php endforeach ?>
             </ul>
         </li>
-        <br>
     <?php endforeach ?>
 
 </ul>
