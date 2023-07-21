@@ -38,18 +38,25 @@ class Movie
     /**
      * @return Actor[]
      */
-    public function getActors(): array
+    public function getActors()
     {
         return $this->actors;
     }
 
+    /**
+     * @param string[] $genres
+     */
     public function setGenres(array $genres)
     {
         $this->genres = $genres;
         return $this;
     }
 
-    public function getGenres(): array
+
+    /**
+     * @return string[]
+     */
+    public function getGenres()
     {
         return $this->genres;
     }

@@ -6,7 +6,7 @@ require_once __DIR__ . '/models/Movie.php';
 /**
  * @var Movie[]
  */
-$movies = require __DIR__ . '/db/db.php';
+$movies = require __DIR__ . '/db/db.php'; // this way it's where $movies come from
 
 ?>
 
