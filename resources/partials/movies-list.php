@@ -1,6 +1,10 @@
 <ul class="movies-list">
 
-    <?php foreach ($movies as $movie) :
+    <?php
+    /**
+     * @var Movie[] $movies
+     */
+    foreach ($movies as $movie) :
         $actors = $movie->getActors();
         $genres = $movie->getGenres();
     ?>
