@@ -22,7 +22,7 @@ class Movie
 
     public function __construct(string $title, int $release_year)
     {
-        $this->$title = $title;
+        $this->title = $title;
         $this->release_year = $release_year;
     }
 
@@ -32,6 +32,7 @@ class Movie
     public function setActors(array $actors)
     {
         $this->actors = $actors;
+        return $this;
     }
 
     /**
@@ -45,6 +46,7 @@ class Movie
     public function setGenres(array $genres)
     {
         $this->genres = $genres;
+        return $this;
     }
 
     public function getGenres(): array
